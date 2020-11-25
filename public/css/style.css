@@ -1,5 +1,175 @@
 @import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+html {
+  font-size: 10px;
+}
 
 body {
-  background-color: yellowgreen;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0); /* IE 6,7 */
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------------------header------------------- */
+
+.header {
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: #333333;
+  color: rgba(215, 215, 215, 0.8);
+  width: 100%;
+  background-color: #333333;
+}
+
+.fa-apple {
+  color: rgba(215, 215, 215, 0.8);
+  font-size: 2.1rem;
+}
+
+.main-nav {
+  width: 96.71vw; /*1vw = 15.2px*/
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 76vw;
+}
+
+.main-nav-list a {
+  color: rgba(215, 215, 215);
+  opacity: 0.9;
+  text-decoration: none;
+  font-weight: 300;
+  outline: none;
+  padding: 15px 7px;
+}
+
+.main-nav-list a:hover {
+  text-decoration: none;
+  color: #eee;
+}
+
+.fa-search,
+.fa-shopping-bag {
+  font-size: 1.8rem;
+}
+
+/*  --------------------aside 광고---------------------- */
+.aside-red {
+  width: 100vw;
+  background-color: #e34140;
+  text-align: center;
+  padding: 15px 0;
+  word-break: keep-all;
+  line-height: 1.5;
+  word-spacing: -1px;
+}
+
+.ad-text,
+.ad-text a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fdf5f4;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/* -----------------------main -------------------------- */
+.main {
+  background-color: teal;
+}
+
+/* -----------------------iphone pro--------------------- */
+.flagship-model {
+  width: 100vw;
+  min-height: 530px;
+  background-image: url("/img/iphone_12_pro_us__e5oyysg4k0ya_large.jpg");
+  background-repeat: no-repeat;
+  background-position: -746px;
+  color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flagship-headline,
+.hyend-headline {
+  letter-spacing: -1.5px;
+  font-size: 55px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.sub-headline {
+  font-size: 25px;
+  margin-top: 15px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.price-info {
+  color: #727276;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+}
+
+.flagship-more {
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.flagship-more a {
+  text-decoration: none;
+  display: inline-block;
+  color: #268cec;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.flagship-more a:nth-child(1):hover::after {
+  content: "";
+  display: block;
+  width: 90px;
+  border-bottom: 2px solid #268cec;
+}
+.flagship-more a:nth-child(2):hover::after {
+  content: "";
+  display: block;
+  width: 68px;
+  border-bottom: 2px solid #268cec;
+}
+.flagship-more a:nth-child(1) {
+  padding-right: 50px;
+}
+
+/* -----------------------iphone 12--------------------- */
