@@ -1,0 +1,144 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.main-nav-list {
+  justify-content: space-between;
+}
+
+.main-nav-list li:nth-child(1) {
+  display: block;
+}
+.main-nav-list li:nth-child(3) {
+  display: none;
+}
+.main-nav-list li:nth-child(4) {
+  display: none;
+}
+.main-nav-list li:nth-child(5) {
+  display: none;
+}
+.main-nav-list li:nth-child(6) {
+  display: none;
+}
+.main-nav-list li:nth-child(7) {
+  display: none;
+}
+.main-nav-list li:nth-child(8) {
+  display: none;
+}
+.main-nav-list li:nth-child(9) {
+  display: none;
+}
+
+.flagship-model {
+  background-image: url("/img/iphone_12_pro_us__e5oyysg4k0ya_small.jpg");
+}
+
+.flagship-headline,
+.hyend-headline {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sub-headline {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+  word-spacing: 3px;
+}
+
+.price-info {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  word-break: keep-all;
+  width: 155px;
+}
+
+.hyend-model {
+  background-image: url(/img/iphone_12_us__fo0stbby242m_small.jpg);
+}
+
+/* present */
+
+.present {
+  background-image: none;
+  background-image: url("/img/logo__dcojfwkzna2q_large.png"),
+    url("/img/phone_pro_large.png");
+  background-position: 50% 12vh, 50% 80%;
+  background-size: 45px 60px, 260px 260px;
+}
+
+.present .present-headline {
+  font-size: 3rem;
+  word-spacing: 3px;
+}
+
+/* new product */
+.small-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.MacBook-air {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(/img/macbook_air__knzp0i282eyy_small.jpg);
+}
+
+.MacBook-pro {
+  margin: 13px 0 0;
+  padding: 0;
+  width: 100%;
+  background-image: url(/img/macbook_pro_13__koscrc0x6wam_small.jpg);
+}
+
+.Mac-mini {
+  width: 100%;
+  margin: 13px 0 0;
+  padding: 0;
+  background-image: url(/img/mac_mini__dc46f3sbvqi6_small.jpg);
+}
+
+.today-event {
+  margin: 13px 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.apple-watch {
+  margin: 13px 0 0;
+  padding: 0;
+  width: 100%;
+  background-image: url(/img/tile__cauwwcyyn9hy_small.jpg);
+}
+
+.apple-watch-SE {
+  margin: 13px 0 0;
+  padding: 0;
+  width: 100%;
+  background-image: url(/img/tile_applewatchSE_small.jpg);
+}
+
+.new-product .flagship-headline.new-product-name {
+  font-size: 3rem;
+}
